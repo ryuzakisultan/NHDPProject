@@ -2,19 +2,19 @@
 <Configuration status="info">
 	<Appenders>
 		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<PatternLayout pattern="[%d{DEFAULT}][%5p][%t][%c{1}] - %m%n%ex" />
 		</Console>
 		
 		<RollingFile name="ROLLING" fileName="async.log"  
 			filePattern="async.log-%i" immediateFlush="false"
 			append="true"> <!--  for backup --> 
 			<PatternLayout>
-				<Pattern>[%d{DEFAULT}][%p][%t][%c{1}] - %m%n%ex</Pattern>
+				<Pattern>[%d{DEFAULT}][%5p][%t][%c{1}] - %m%n%ex</Pattern>
 			</PatternLayout>
 			
 			
 			<Policies>
-				<SizeBasedTriggeringPolicy size="102400 KB" />
+				<SizeBasedTriggeringPolicy size="1 MB" />
 			</Policies>
 		
 			<!-- fileIndex="min" means async.log will always be latest
@@ -35,6 +35,7 @@
 			
 		<asyncRoot level="INFO"> <!-- for System.out -->
 			<AppenderRef ref="Console" />
+			<AppenderRef ref="ROLLING" />
 		</asyncRoot>
 		
 		<asyncLogger name="project.nhdp" level="INFO"
