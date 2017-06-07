@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 public class NHDPJavaProject {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "org.sqlite.JDBC";
-	static final String DB_URL = "jdbc:sqlite:d:/sqlite/test.db";
+	static final String DB_URL = "jdbc:sqlite:test.db";
 	
 	
 	static final String CSV_URL = "C:/Users/sahmed07/Downloads/JDBC Training/Project/data.csv";
