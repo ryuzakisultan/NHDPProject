@@ -25,9 +25,17 @@ public class NHDPJavaProject {
 	static final String CSV_URL = "C:/Users/sahmed07/Downloads/JDBC Training/Project/data.csv";
 	static final int BATCH_SIZE = 100;
 
-	static final Logger log = LogManager.getLogger(NHDPJavaProject.class);
+	private static final Logger log = LogManager.getLogger(NHDPJavaProject.class.getName());
 
 	public static void main(String[] args) {
+		log.trace("Trace Message");
+		log.debug("Debug Message");
+		log.info("Info Message");
+		log.warn("Warn Message");
+		log.error("Error Message");
+		log.fatal("Fatal Message");
+		
+		
 		// Initialize a blocking queue for buffering data
 		//TODO LOG
 		BlockingQueue<String> queue = new LinkedBlockingQueue<String>();
@@ -74,8 +82,6 @@ public class NHDPJavaProject {
 			//TODO LOG
 			con = DriverManager.getConnection(DB_URL);
 			//TODO LOG
-			ps = con.prepareStatement(insertSQL);
-
 			// If table doesn't exist create table
 			try {
 				dbm = con.getMetaData();
@@ -99,6 +105,9 @@ public class NHDPJavaProject {
 					tables.close();
 				}
 			}
+			
+			ps = con.prepareStatement(insertSQL);
+			//TODO
 
 			con.setAutoCommit(false);
 			//TODO LOG
