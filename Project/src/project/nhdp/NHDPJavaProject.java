@@ -17,6 +17,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 public class NHDPJavaProject {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "org.sqlite.JDBC";
@@ -35,6 +36,7 @@ public class NHDPJavaProject {
 		log.error("Error Message");
 		log.fatal("Fatal Message");
 		
+		/*
 		
 		// Initialize a blocking queue for buffering data
 		//TODO LOG
@@ -157,7 +159,7 @@ public class NHDPJavaProject {
 					e.printStackTrace();
 				}
 			}
-		}
+		}*/
 
 	}
 }
