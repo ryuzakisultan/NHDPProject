@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
-public class DatabaseConnectionPool {
+final public class DatabaseConnectionPool {
 	// JDBC driver name and database URL
 		private static final String JDBC_DRIVER = "org.sqlite.JDBC";
 		private static final String DB_URL = "jdbc:sqlite:test.db";
