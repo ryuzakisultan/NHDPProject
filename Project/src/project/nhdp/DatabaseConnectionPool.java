@@ -12,12 +12,9 @@ final public class DatabaseConnectionPool {
 		private static final String DB_URL = "jdbc:sqlite:test.db";
 		private static Connection connection = null;
 		
-		
-		
 		private DatabaseConnectionPool() {
 			
 		}
-		
 		public static Connection getDatabaseConnection() throws SQLException {
 			if (connection == null) {
 				PoolProperties p = new PoolProperties();
