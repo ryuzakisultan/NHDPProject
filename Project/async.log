@@ -120,3 +120,39 @@ java.sql.SQLException: column trace_audit_no is not unique
 [2017-06-08 14:35:35,633][   ][ INFO][main][NHDPJavaProject] - Closing database connection
 [2017-06-08 14:35:35,633][   ][ INFO][main][NHDPJavaProject] - Database connection closed
 [2017-06-08 14:35:35,633][   ][ INFO][main][NHDPJavaProject] - Database connection closed
+[2017-06-08 15:03:49,478][   ][ INFO][main][NHDPJavaProject] - Initializing LinkedBlockingQueue buffer
+[2017-06-08 15:03:49,478][   ][ INFO][main][NHDPJavaProject] - Initializing LinkedBlockingQueue buffer
+[2017-06-08 15:03:49,478][   ][ INFO][main][NHDPJavaProject] - CSV file to Buffer reading started
+[2017-06-08 15:03:49,478][   ][ INFO][main][NHDPJavaProject] - CSV file to Buffer reading started
+[2017-06-08 15:03:49,494][   ][ INFO][main][NHDPJavaProject] - Getting Database connection via DriverManager
+[2017-06-08 15:03:49,494][   ][ INFO][main][NHDPJavaProject] - Getting Database connection via DriverManager
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Getting Database MetaData
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Getting Database MetaData
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Check if TRANS_REQUESTS table exists in database
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Check if TRANS_REQUESTS table exists in database
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - setting setAutoCommit to false
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - setting setAutoCommit to false
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Batch processing starting
+[2017-06-08 15:03:49,603][   ][ INFO][main][NHDPJavaProject] - Batch processing starting
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - executing batch 1
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - executing batch 1
+[2017-06-08 15:03:49,619][   ][ERROR][main][NHDPJavaProject] - java.sql.SQLException: column trace_audit_no is not unique
+java.sql.SQLException: column trace_audit_no is not unique
+	at org.sqlite.DB.throwex(DB.java:370)
+	at org.sqlite.DB.executeBatch(DB.java:302)
+	at org.sqlite.PrepStmt.executeBatch(PrepStmt.java:93)
+	at project.nhdp.NHDPJavaProject.main(NHDPJavaProject.java:123)
+[2017-06-08 15:03:49,619][   ][ERROR][main][NHDPJavaProject] - java.sql.SQLException: column trace_audit_no is not unique
+java.sql.SQLException: column trace_audit_no is not unique
+	at org.sqlite.DB.throwex(DB.java:370)
+	at org.sqlite.DB.executeBatch(DB.java:302)
+	at org.sqlite.PrepStmt.executeBatch(PrepStmt.java:93)
+	at project.nhdp.NHDPJavaProject.main(NHDPJavaProject.java:123)
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Closing prepared statment
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Closing prepared statment
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Prepared statement closed
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Prepared statement closed
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Closing database connection
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Closing database connection
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Database connection closed
+[2017-06-08 15:03:49,619][   ][ INFO][main][NHDPJavaProject] - Database connection closed
