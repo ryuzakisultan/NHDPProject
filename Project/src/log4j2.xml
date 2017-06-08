@@ -35,7 +35,6 @@
 			
 		<asyncRoot level="INFO"> <!-- for System.out -->
 			<AppenderRef ref="Console" />
-			<AppenderRef ref="ROLLING" />
 		</asyncRoot>
 		
 		<asyncLogger name="project.nhdp" level="INFO"
