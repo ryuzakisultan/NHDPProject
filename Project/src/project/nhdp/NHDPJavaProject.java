@@ -20,7 +20,7 @@ import org.apache.logging.log4j.MarkerManager;
 
 
 public class NHDPJavaProject {
-	static final String CSV_URL = "C:/Users/sahmed07/Downloads/JDBC Training/Project/data.csv";
+	static final String CSV_URL = "data.csv";
 	static final int BATCH_SIZE = 100;
 
 	private static final Logger log = LogManager.getLogger(NHDPJavaProject.class.getName());
